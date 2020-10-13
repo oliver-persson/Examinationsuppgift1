@@ -1,0 +1,43 @@
+/* Stylar webbsidan med CSS */
+
+body{
+    background-color: lightgreen;/* sätter webbsidans bakgrundsfärg */
+}
+
+.mainHeading{
+    color: darkslategrey;/* textfärg */
+    
+}
+
+/* stylar profilbilden */
+.profileImg{
+    border-style: ridge;
+    border-width: 5px;
+    border-color: lightslategray;
+}
+
+/* Flexbox som innehåller stylade länkar */
+.linkBox{
+    display: flex; /* använder flexbox */
+    flex-direction: row;/* lägger elementen i en rad */
+    flex-wrap: wrap; /* elementen läggs på flera rader om de inte får plats */
+}
+
+/* För skärmar som är 600px eller mindre */
+@media screen and (max-width: 600px) {
+    .linkBox{
+        display: flex;
+        flex-direction: column;/* lägger elementen i en kolumn */
+    }
+}
+
+/* Stylar portfolio-länkarna */
+.portfoliLinks{
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px 50px;
+    border-radius: 20px;
+    margin: 5px;
+}

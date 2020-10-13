@@ -1,12 +1,45 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!-- berättar för webbläsaren att dokumentet är html -->
+
+<!-- innanför denna tag skrivs html-kod, språket är engelska -->
 <html lang="en">
+
+<!-- Här börjar hemsidans huvud. Här skapas kopplingar, inställningar mm -->
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"><!-- använder denna teckenkodning -->
+    <!-- Responsiv webbsida. Storleken bestäms av enheten som läser hemsida. Sätter initial zoom level. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentation Oliver</title><!-- Sätter titeln som visas i webbläsarfönstret -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Presentation Oliver</title><!-- sätter titeln som visas i webbläsarfönstret -->
+    <link rel="stylesheet" href="styles.css"><!-- Skapar koppling till mitt CSS sheet -->
 </head>
+
+<!-- Här börjar hemsidans kropp. Här lägger jag in element mm -->
+
 <body>
-    
+    <h1 class="mainHeading">Oliver Persson</h1><!-- skapar en huvudrubrik -->
+    <h2>Kort presentation</h2><!-- skapar en underrubrik -->
+    <p> Jag heter Oliver och är 27 år. Jag bor utanför Kristianstad med sambo och katt.
+        Jag har tidigare pluggat kemi och i dagsläget jobbar jag på ett laboratorium.
+        Mina intressen är datorspel (gärna samlarkortspel), brädspel och musik(Eurovision).
+        Intresset för programmering har funnits "lite vid sidan av", men nu vill jag lägga
+        mer fokus på det. Det ska bli roligt.</p>
+
+    <!-- Infogar en bild. Alternativ text visas om bilden ej nås. -->
+    <img class="profileImg" src="fotoOP.png" alt="Profilbild" width="200px">
+
+
+    <h2>Portfolio (<i>kommande</i>)</h3>
+        <!-- skapar element till flexbox -->
+        <div class="linkBox">
+
+            <!-- skapar länkar till kommande portfolio -->
+            <a class="portfoliLinks" href="projekt1.html">Projekt 1</a>
+            <a class="portfoliLinks" href="projekt2.html">Projekt 2</a>
+            <a class="portfoliLinks" href="projekt3.html">Projekt 3</a>
+            <a class="portfoliLinks" href="projekt4.html">Projekt 4</a>
+            <a class="portfoliLinks" href="projekt5.html">Projekt 5</a>
+        </div>
+
 </body>
+
 </html>
