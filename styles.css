@@ -1,43 +1,104 @@
 /* Stylar webbsidan med CSS */
 
-body{
-    background-color: lightgreen;/* sätter webbsidans bakgrundsfärg */
+body {
+    background-color: rgb(182, 219, 148);
+    /* sätter webbsidans bakgrundsfärg */
 }
 
-.mainHeading{
-    color: darkslategrey;/* textfärg */
-    
+/* stylar huvudrubriken */
+
+.mainHeading {
+    color: darkslategrey;
+    /* textfärg */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* ändrar rubrikens typsnitt */
+    font-size: 40px;
+    /* textstorlek */
+    text-decoration: underline;
+    /* text understruken*/
+    text-align: center;
+    /* centrerad*/
+}
+
+h2{
+    color: darkslategrey;
+    /* textfärg */
+    font-family: sans-serif;
+    /* ändrar rubrikens typsnitt */
+    text-align: left;
+    /* underrubriker till vänster*/
 }
 
 /* stylar profilbilden */
-.profileImg{
+
+.profileImg {
     border-style: ridge;
+    /* stil på ram runt bild */
     border-width: 5px;
+    /* ramens bredd */
     border-color: lightslategray;
+    /* ramens färg */
+    position: static;
+    /* placering av bild */
+}
+
+ol{
+    font-family: sans-serif;
+    /* ändrar typsnitt */
+    color:#87CEFA;
+    /* sätter hex-färg */
+    text-shadow: 2px 0 green, -2px 0 0 green, 0 2px 0 green, 0 -2px 0 green, 1px 1px green, -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green;
+    /* använder skugga */
+    font-size: large;
+    /* textstorlek */
+}
+
+.presentationText {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* byter typsnitt */
+    position: relative;
+    /* placering av text */
+    left: 5px;
+    /* liten intendering av text */
+    font-size: large;
+    /* större textstorlek*/
 }
 
 /* Flexbox som innehåller stylade länkar */
-.linkBox{
-    display: flex; /* använder flexbox */
-    flex-direction: row;/* lägger elementen i en rad */
-    flex-wrap: wrap; /* elementen läggs på flera rader om de inte får plats */
+
+.linkBox {
+    display: flex;
+    /* använder flexbox */
+    flex-direction: row;
+    /* lägger elementen i en rad */
+    flex-wrap: wrap;
+    /* elementen läggs på flera rader om de inte får plats */
 }
 
 /* För skärmar som är 600px eller mindre */
+
 @media screen and (max-width: 600px) {
-    .linkBox{
+    .linkBox {
         display: flex;
-        flex-direction: column;/* lägger elementen i en kolumn */
+        flex-direction: column;
+        /* lägger elementen i en kolumn */
     }
 }
 
 /* Stylar portfolio-länkarna */
-.portfoliLinks{
+
+.portfoliLinks {
     border-style: solid;
+    /* ram */
     border-color: black;
+    /* ramens färg */
     text-align: center;
+    /* centrerad text i rutorna */
     background-color: lightblue;
     padding: 10px 50px;
+    /* fyller upp rutorna på höjd och bredd */
     border-radius: 20px;
+    /* rundar hörnen */
     margin: 5px;
+    /* lite mellanrum runt länkarna*/
 }
