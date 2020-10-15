@@ -20,7 +20,7 @@ body {
     /* centrerad*/
 }
 
-h2{
+.secondHeading {
     color: darkslategrey;
     /* textfärg */
     font-family: sans-serif;
@@ -36,25 +36,14 @@ h2{
     /* stil på ram runt bild */
     border-width: 5px;
     /* ramens bredd */
-    border-color: lightslategray;
-    /* ramens färg */
+    border-color: #778899;
+    /* ramens färg med hex */
     position: static;
     /* placering av bild */
 }
 
-ol{
-    font-family: sans-serif;
-    /* ändrar typsnitt */
-    color:#87CEFA;
-    /* sätter hex-färg */
-    text-shadow: 2px 0 green, -2px 0 0 green, 0 2px 0 green, 0 -2px 0 green, 1px 1px green, -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green;
-    /* använder skugga */
-    font-size: large;
-    /* textstorlek */
-}
-
 .presentationText {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: serif;
     /* byter typsnitt */
     position: relative;
     /* placering av text */
@@ -101,4 +90,14 @@ ol{
     /* rundar hörnen */
     margin: 5px;
     /* lite mellanrum runt länkarna*/
+    font-family: sans-serif;
+    /* ändrar typsnitt */
+    color: greenyellow;
+    /* sätter färg */
+    text-shadow: 2px 0 blue, -2px 0 0 blue, 0 2px 0 blue, 0 -2px 0 blue, 1px 1px blue, -1px -1px 0 blue, 1px -1px 0 blue, -1px 1px 0 blue;
+    /* använder skugga */
+    font-size: large;
+    /* textstorlek */
+    text-decoration: none;
+    /* tar bort understrykning av länkar */
 }
